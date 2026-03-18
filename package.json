@@ -1,0 +1,17 @@
+{
+  "name": "mern-app",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "install:all": "npm ci --workspace client && npm ci --workspace server",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server"
+  }
+}
+
